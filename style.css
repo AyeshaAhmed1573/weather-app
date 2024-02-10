@@ -2,7 +2,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins'
+    font-family: 'Poppins';
+    color:aliceblue;
+    background-image: linear-gradient(to right, rgb(60, 183, 231) , rgb(181, 128, 241));
 }
 .search button{
     height: 40px;
@@ -46,7 +48,9 @@ flex: 1;
 .container{
    
     justify-content: center;
-      background-image: linear-gradient(to right, rgb(60, 183, 231) , rgb(181, 128, 241));
+     background-color: rgba(255, 255, 255, 0.411);
+     backdrop-filter: blur(12px);
+     box-shadow: 10px 10px 5px 12px rgba(0, 0, 0, 0.377);
       width: 90%;
       max-width: 490px;
       margin: 50px auto 0;
@@ -63,4 +67,23 @@ flex: 1;
     color: white;
     font-size: 40px;
 
+}
+.col img{
+    height: 100px;
+    width: 100px;
+}
+ .row{
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.hum{
+    display: flex;
+}
+.row .col{
+    margin-right: 30px;
+}
+.hum h2{
+    padding-left: 30px;
 }

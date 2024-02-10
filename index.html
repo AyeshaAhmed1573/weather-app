@@ -10,15 +10,35 @@
 <body>
    <div class="container" >
     <div class="search">
-    <input type="text" placeholder="ENTER CITY NAME" >
+    <input type="text" id="input" placeholder="ENTER CITY NAME" >
     <button ><img src="search.png" alt=""  ></button>
 </div>
 <div class="weather">
     <img src="Sunny.png" alt="">
-    <h1>30°C</h1>
-    <h2>KARACHI</h2>
-    
+    <h1 class="temp">30°C</h1>
+    <h2 class="city">KARACHI</h2>
+    <div class="row">
+        <div class="col">
+            <div class="hum">
+           
+            <img src="humidity.png" alt="">
+            <h2 class="humidity">34</h2>
+        </div >
+           <h3>HUMIDITY</h3>
+        </div >
+        <div class="col">
+            <div class="hum">
+           
+            <img src="wind.png" alt="">
+            <h2 class="wind">34</h2>
+        </div >
+           <h3>WIND</h3>
+        </div >
+    </div>
+
+    </div>
 </div>
    </div> 
+   <script src="app.js"></script>
 </body>
 </html>
