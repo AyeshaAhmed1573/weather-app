@@ -52,7 +52,7 @@ flex: 1;
      backdrop-filter: blur(12px);
      box-shadow: 10px 10px 5px 12px rgba(0, 0, 0, 0.377);
       width: 90%;
-      max-width: 550px;
+      max-width: 490px;
       height: fit-content;
       margin: 50px auto 0;
       border-radius: 30px;
@@ -67,6 +67,7 @@ flex: 1;
 .weather h2 {
     color: white;
     font-size: 40px;
+   
 
 }
 .col img{
@@ -75,7 +76,7 @@ flex: 1;
 }
  .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
    
 }
@@ -94,4 +95,25 @@ flex: 1;
 }
 .weather{
     display: none;
+ 
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        width: 90%;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .col img {
+        height: 70px;
+        width: 70px;
+    }
+    
 }

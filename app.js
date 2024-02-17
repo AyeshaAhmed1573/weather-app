@@ -9,7 +9,7 @@ async function checkweather(city){
     console.log(data);
 
 const cit=document.querySelector('.city').innerHTML= data.name;
-const temp=document.querySelector('.temp').innerHTML=Math.round(data.main.temp);
+const temp=document.querySelector('.temp').innerHTML=Math.round(data.main.temp)+"°C";
 const humidity=document.querySelector('.humidity').innerHTML=Math.round(data.main.humidity)+"%";
 const wind=document.querySelector('.wind').innerHTML=Math.round(data.wind.speed)+"Km/h";
 if (data.weather[0].main=="clear") {
