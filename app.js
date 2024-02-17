@@ -12,11 +12,11 @@ const cit=document.querySelector('.city').innerHTML= data.name;
 const temp=document.querySelector('.temp').innerHTML=Math.round(data.main.temp)+"°C";
 const humidity=document.querySelector('.humidity').innerHTML=Math.round(data.main.humidity)+"%";
 const wind=document.querySelector('.wind').innerHTML=Math.round(data.wind.speed)+"Km/h";
-if (data.weather[0].main=="clear") {
+if (data.weather[0].main=="Clear") {
     image.setAttribute('src', "Sunny.png");
     
 }  
-else if (data.weather[0].main=="Mist") {
+else if (data.weather[0].main=="Haze") {
     image.setAttribute('src', "mist.png");
     
 }
@@ -34,6 +34,10 @@ else if (data.weather[0].main=="Rain") {
 }
 else if (data.weather[0].main=="Snow") {
     image.setAttribute('src', "snow.png");
+    
+}
+else if (data.weather[0].main=="Smoke") {
+    image.setAttribute('src', "smoke.png");
     
 }
 document.querySelector(".weather").style.display="block"
