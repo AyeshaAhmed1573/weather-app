@@ -16,7 +16,7 @@ if (data.weather[0].main=="Clear") {
     image.setAttribute('src', "Sunny.png");
     
 }  
-else if (data.weather[0].main=="Haze") {
+else if (data.weather[0].main=="Haze"|| data.weather[0]. main=="Mist") {
     image.setAttribute('src', "mist.png");
     
 }
@@ -28,7 +28,7 @@ else if (data.weather[0].main=="Drizzle") {
     image.setAttribute('src', "rain.png");
     
 }
-else if (data.weather[0].main=="Rain") {
+else if (data.weather[0].main=="Rain" ) {
     image.setAttribute('src', "showerrain.png");
     
 }
