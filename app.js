@@ -32,6 +32,10 @@ else if (data.weather[0].main=="Rain") {
     image.setAttribute('src', "showerrain.png");
     
 }
+else if (data.weather[0].main=="Snow") {
+    image.setAttribute('src', "snow.png");
+    
+}
 document.querySelector(".weather").style.display="block"
 }
 
