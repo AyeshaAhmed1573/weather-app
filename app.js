@@ -13,7 +13,7 @@ const temp=document.querySelector('.temp').innerHTML=Math.round(data.main.temp)+
 const humidity=document.querySelector('.humidity').innerHTML=Math.round(data.main.humidity)+"%";
 const wind=document.querySelector('.wind').innerHTML=Math.round(data.wind.speed)+"Km/h";
 if (data.weather[0].main=="clear") {
-    image.setAttribute('src', "https://cdn-icons-png.flaticon.com/512/3222/3222691.png");
+    image.setAttribute('src', "Sunny.png");
     
 }  
 else if (data.weather[0].main=="Mist") {
